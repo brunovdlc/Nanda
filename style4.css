@@ -1,0 +1,107 @@
+body {
+      background-image: url("fotos/papel.jpg");
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .lock-screen {
+      background-color: #transparent;
+      border-radius: 8px;
+      padding: 154px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffb040;
+      font-family: Arial, sans-serif;
+      font-size: 34px;
+      margin-top: 0;
+    }
+
+    .password-input {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding: 8px;
+      margin-top: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .unlock-button {
+      background-color: #2E9AFE;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 16px;
+    }
+
+    .unlock-button:hover {
+      background-color: #58ACFA;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+/*   cod 2  */ 
+
+
+.lock-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+  border-radius: 20px;
+
+}
+
+.user-photo {
+  width: 150px;
+  height: 150px;
+  background-image: url('fotos/ft1.png');
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-size: 100% 100%;
+  background-position: center;
+
+}
+
+.password-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+

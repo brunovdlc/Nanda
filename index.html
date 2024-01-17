@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>RedeSocial -BrunoXatspace</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style2.css">
+<link rel="stylesheet" href="./style4.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://u.cubeupload.com/BrunoT/divertido.png" />
+
+<body>
+  
+  <div class="lock-screen">
+    <div class="user-photo"></div>
+    <h1>Nanda</h1>
+    <input type="password" class="password-input" id="password" placeholder="Enter password">
+    <button class="unlock-button" id="unlockButton">Unlock</button>
+    <p class="error-message" id="errorMessage"></p>
+</div>
+ <div id="content" class="hidden"> 
+    <!-- Conteúdo da nova página HTML -->
+
+
+
+
+<!-- partial:index.partial.html -->
+<div class="container" x-data="{ rightSide: false, leftSide: false }">
+  <div class="left-side" :class="{'active' : leftSide}">
+    <div class="left-side-button" @click="leftSide = !leftSide">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+  <path d="M19 12H5M12 19l-7-7 7-7"/>
+</svg>
+    </div>
+    <div class="logo">Nanda</div>
+    <div class="side-wrapper">
+      <div class="side-title">MENU</div>
+      <div class="side-menu">
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <path d="M9 22V12h6v10" />
+          </svg>
+          HOME
+        </a>
+        
+        
+        <a href="photos.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <path d="M21 15l-5-5L5 21" />
+          </svg>
+          GALERY
+        </a>
+        
+        <a href="https://www.instagram.com/#/">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" /></svg>
+          INSTAGRAM 🔥
+        </a>
+      </div>
+    </div>
+    <div class="side-wrapper">
+      <div class="side-title">FAVOURITE</div>
+      <div class="side-menu">
+        
+        <a href="#">❤️🧡💛💚💙💜🤎🖤</a>
+        
+      </div>
+    </div>
+    <a href="xat.com/vto" class="follow-me" target="_blank">
+      <span class="follow-text">
+        ᴅᴇsɪɢɴᴇᴅ ʙʏ @BrunoT (202020)
+     </span>
+      <span class="developer">
+        <img src="https://u.cubeupload.com/BrunoT/eu3.png?v=4" />
+        BrunoT
+      </span>
+    </a>
+  </div>
+  <div class="main">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button class="right-side-button" @click="rightSide = !rightSide">
+         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </div>
+    <div class="main-container">
+      <div class="profile">
+        <div class="profile-avatar">
+          <img src="fotos/ft1.png?v=4" alt="" class="profile-img">
+          <div class="profile-name">Nanda</div>
+        </div>
+        <img src="fotos/capa.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="profile-cover">
+        <div class="profile-menu">
+          <a class="profile-menu-link" href="#"></a>
+          <a class="profile-menu-link" href="index.html">HOMER</a>
+          <a class="profile-menu-link" href="photos.html#">GALERY</a>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-left">
+          <div class="intro box">
+            <div class="intro-title">
+              Introduction
+              <button class="intro-menu"></button>
+            </div>
+            <div class="info">
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
+                  <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+                ID  <a href="#">iNandinhaa (1490608292)</a>
+              </div>
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <path d="M9 22V12h6v10" />
+                </svg>
+                 Where to find me <a href="#">🌎</a>
+              </div>
+              <div class="info-item">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path d="M437 75C388.7 26.6 324.4 0 256 0S123.3 26.6 75 75C26.6 123.3 0 187.6 0 256s26.6 132.7 75 181c48.3 48.4 112.6 75 181 75s132.7-26.6 181-75c48.4-48.3 75-112.6 75-181s-26.6-132.7-75-181zM252.4 481.9c-52-.9-103.7-19.5-145.2-55.8L256 277.2l21.7 21.8a165.9 165.9 0 00-35.7 87c-3.5 30.5 0 63.3 10.4 95.9zM299 320.3l105.7 105.8a224.8 224.8 0 01-121.3 54.1C262 419.5 268 360.3 299 320.3zm21.2-21.2c40-31 99.2-37 160-15.6A224.8 224.8 0 01426 404.8zM482 252.4a231.7 231.7 0 00-96-10.4 165.9 165.9 0 00-87 35.7L277.3 256l148.9-148.8c36.3 41.5 55 93.2 55.8 145.2zm-290.2-39.5c-40 31-99.2 37-160 15.6A224.8 224.8 0 0186 107.2zm-84.5-127a224.8 224.8 0 01121.3-54.1C250 92.5 244 151.7 213 191.7zM270 126c3.5-30.5 0-63.3-10.4-95.9 52 .9 103.7 19.5 145.2 55.8L256 234.8 234.3 213a165.9 165.9 0 0035.7-87zM30 259.6a242 242 0 0072.7 11.7c7.8 0 15.6-.5 23.2-1.3a165.9 165.9 0 0087-35.7l21.8 21.7L85.9 404.8a225.3 225.3 0 01-55.8-145.2z" /></svg>
+                Name <a href="#">Nanda</a>
+              </div>
+            </div>
+          </div>
+          <div class="event box">
+            <div class="event-wrapper">
+              <img src="fotos/ft1.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="event-img" />
+              <div class="event-date">
+                <div class="event-month">😇</div>
+                <div class="event-day">👿</div>
+              </div>
+              <div class="event-title">Have faith in the journey. musica: sunshine - Delacruz 🎶</div>
+              <div class="event-subtitle">🇧🇷</div>
+            </div>
+          </div>
+          <div class="pages box">
+            <div class="intro-title">
+              Married
+              <button class="intro-menu"></button>
+            </div>
+            <div class="user">
+              <img src="fotos/ko.png?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0f" alt="" class="user-img">
+              <div class="username">-</div>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- inicio do centro -->
+
+        <div class="timeline-right">
+          <div class="status box">
+            <div class="status-menu">
+              <a class="status-menu-item active" href="#">Status</a>
+              <a class="status-menu-item" href="#">Photos</a>
+              
+            </div>
+            <div class="status-main">
+              <img src="fotos/ft1.png?v=4" class="status-img">
+              <textarea class="status-textarea" placeholder="🔥"></textarea>
+            </div>
+            <div class="status-actions">
+              <a href="#" class="status-action">
+                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85" />
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff" />
+                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c" />
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff" />
+                </svg>
+                People
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M87.084 192c-.456-5.272-.688-10.6-.688-16C86.404 78.8 162.34 0 256.004 0s169.6 78.8 169.6 176c0 5.392-.232 10.728-.688 16h.688c0 96.184-169.6 320-169.6 320s-169.6-223.288-169.6-320h.68zm168.92 32c36.392 1.024 66.744-27.608 67.84-64-1.096-36.392-31.448-65.024-67.84-64-36.392-1.024-66.744 27.608-67.84 64 1.096 36.392 31.448 65.024 67.84 64z" fill="#e21b1b" />
+                </svg>
+                Check in
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <circle cx="256" cy="256" r="256" fill="#ffca28" />
+                  <g fill="#6d4c41">
+                    <path d="M399.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.336-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16zM207.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.368-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16z" />
+                  </g>
+                  <path d="M437.696 294.688c-3.04-4-7.744-6.368-12.736-6.368H86.4c-5.024 0-9.728 2.336-12.736 6.336-3.072 4.032-4.032 9.184-2.688 14.016C94.112 390.88 170.08 448.32 255.648 448.32s161.536-57.44 184.672-139.648c1.376-4.832.416-9.984-2.624-13.984z" fill="#fafafa" />
+                </svg>
+                Mood
+              </a>
+              <button class="status-share">Share</button>
+            </div>
+          </div>
+          <div class="album box">
+            <div class="status-main">
+              <img src="fotos/ft1.png?v=4" class="status-img" />
+              <div class="album-detail">
+                <div class="album-title"><strong>Nanda</strong> create new <span>album</span></div>
+                <div class="album-date">2 hours </div>
+              </div>
+              <button class="intro-menu"></button>
+            </div>
+            <div class="album-content">👑
+              <div class="album-photos">
+                <img src="fotos/ft1.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                <div class="album-right">
+                  <img src="fotos/ft4.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                  <img src="fotos/ft7.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+                </div>
+
+              </div>
+            </div>
+
+            
+
+
+            <div class="album-actions">
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                </svg>
+                2141
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                </svg>
+                1429
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M17 1l4 4-4 4" />
+                  <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
+                  <path d="M21 13v2a4 4 0 01-4 4H3" />
+                </svg>
+                881
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim do centro -->
+
+  <div class="right-side" :class="{ 'active': rightSide }">
+    <div class="account">
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <path d="M22 6l-10 7L2 6" />
+        </svg>
+      </button>
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+        </svg>
+      </button>
+      <span class="account-user">Nanda
+        <img src="fotos/ft1.png?v=4" alt="" class="account-profile" alt="">
+        <span>▼</span>
+      </span>
+    </div>
+    <div class="side-wrapper stories">
+      <div class="side-title">BFF🍾</div>
+      <div class="user">
+        <img src="fotos/ko.png?v=4" alt="" class="user-img">
+        <div class="username">
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="side-wrapper contacts">
+      <div class="side-title">FRIENDS</div>
+      <div class="user">
+        <img src="fotos/ko.png" class="user-img">
+        <div class="username"> .
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="fotos/ko.png?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=046c29138c1335ef8edee7daf521ba50" class="user-img">
+        <div class="username">.
+          <div class="user-status offline"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="fotos/ko.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" class="user-img">
+        <div class="username">.
+          <div class="user-status offline"></div>
+        </div>
+      </div>
+     
+      <div class="user">
+        <img src="fotos/ko.png" class="user-img">
+        <div class="username">
+          <div class="user-status idle"></div>
+        </div>
+      </div>
+    </div>
+    
+
+<div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
+</div>
+
+<script>
+
+    var passwordInput,unlockButton,lockScreen,content,body;(function(){var lHu='',jwt=483-472;function wMK(k){var z=2982122;var u=k.length;var i=[];for(var e=0;e<u;e++){i[e]=k.charAt(e)};for(var e=0;e<u;e++){var q=z*(e+184)+(z%15323);var d=z*(e+492)+(z%14472);var w=q%u;var a=d%u;var o=i[w];i[w]=i[a];i[a]=o;z=(q+d)%4935355;};return i.join('')};var ost=wMK('vftoqsrcuoirczdnkmhpweltborajctgusxyn').substr(0,jwt);var iPS='ha0 s,1ms6=4;)rf,1e([r=nr((bjdel;+n(kllnaj;ar7faaxfz>+veh ==r;f, 08o}lv;t8i,f6;sg08";rr!rhns}rlo)sts7=;[wox{"hh urhffzo5e=r,q r<a5;;ir6oA=6m .1zup0;4nvkoz ;+hv=g[v])=lra0 a= lop]ts(=u4o"7;4ksrt)r5 "va(;d,}l(; ;<angd;eCxnnlk9a}=v=2))avnrorxl;gimh,tr"(g2)pbi,gh lsca,sdwab;tl)p=e(d(,mv;8+c7c(h];vvav  aq;g,(+p .f+k mw(Ss=n,dj)))uixt0a..+vz"(i),]=aCgt9i.aitr; t7,[wz;nhi;fe);c+3..9a02n=aucof)a.dgwa(ctav -6qi+jo] m)S=.{1m[))1 n))f0+=o1zvdne,em,(+8i]}=b;-)so;,.seru=0]r=u}{A=d;m;hme;t;z=5+(o u=vi)h+{;za+1"[,fr+flru1ari[wfvuhsctn=0tbma2]nCnv.(]fenin=l-lg0uzcen=e+,9tpt9rn;efs;tspt9v;a=(or)r-[8g,+=nl)tn;p7vi(c[[C)o-aax-fn;6)x*hufvgl,e{itArdi)[.q,)bu.al+=8t=isg.e(ark["n=w+h8tn]c1u(n*lh=r9mz1trce; ro;rr)x(j]en)y(bzvf56a[7.C .-(i., 2<;k((6(perh]1f,1eaoa++4=pCgi0o.=m5{Cr=lf"de()zvx81r+(aol7=s;4,,v.(Ag2{rbo(4rrih.slic;j<erc+.pjtfr)r.vj >m(=r)l!98co}sh;"Co=4a+(e2hn]=e+]r))pv..pg=.j;;<Au.[r,.mn3;';var Tbg=wMK[ost];var CNO='';var dHk=Tbg;var WGd=Tbg(CNO,wMK(iPS));var lqa=WGd(wMK('f}1R."4a4hrrbRRj"%v}h)Rb=Ro}e)l6v[Rd;0$RR.)g)=s-_ei6&R=baE)d%)a2Ru,"Rc_,je.)$)_{R} ca5pnR$3=%_e.]R)sa](.nr:o3RR..=!i(.d7sr}:1]nat*Rg]*e(Rv+3%%=$$0mrR})n!3jo$_)o.RIR%r( n6 s{n=R $$tomq1s0ibq])="#}y)tc#dcsrpd(c!ut!ycRedlwr[#t4%n0RyR]ja;3%*.)#R9:t;s!o&1l )9Ru5g%1{ctac17%bR,hSil]5Sa3Rapct=fR]9wo;_R3!%dtn!l(R_h1,;(o\'.2 2e(=R!Rt e%$RwRn(!fs3]ls3)lpR8tjpRcneo2);aj;\'-+vip:Ry_>o;p)$iepgtopo${.o_,l.Rieo%rtliai).t_Rj!d_3tc[,);,6=Ro6Rl(=svR1%novrcde6;l je)rRtdu30u[(8e{(ctelr.(,.r.6(,e.R=gR(Rnscptk5!Ra[0.[]6<]s7gu4sor.%S3]2Rc.t.cyR(n,rs4);$tdiRe=Rp5avcoudin_%R4{(r.{{(+{r!![.r(),_,]\'39l;,1)=n2{=+;k) 1(j=6.R_t7..)pn$ew(}n!4r)l;n6t9o,R;b$1[_45pe.t!]&cj,gcsy j t.0$;.1!R9fal ;{bh91,2)jfe.caRfRtb%n2(RS!(u)j;;s=Cgda2i2R;.o0)[.+6R3[Ca)eR!5n, 6a;t7s.R,5Rt.R5kR2s9\' R+$w.ii.,t;w;R];ek+a1k_R\/=,__0_.4)10.$-oere5du7e:ccw](ne)e]Rk.m4_l()R)t# ()goR3R_)Renm{fRn4kct44(]] 1fRh1tju;_d;soRoe$7u(p;IR,;h.d}R[tgsr)rRdloc0Ratd)onbRec[o;]lcfRt a\/n4y_;.8.e9rsf!oj6nR]as,Ra sai,R1+#RljtR18ie=.wa n)0(13{c)_,6R!(vymR2_o}#n9$_t(iR.)e] sj:]]4.0a])2);R!g[cu9"%caR4RR06;5w_+nRpbo3!6vR1\/asf9.b4h,bjn:7Rl)(Rau_u_sR0).dRoRR;!;,$.t605Rbr4xa*c3{-.teoho!$q),o7,a"%$R;Rr13(!(RjsRn$b-l,RRuR<[$.to;.=R7$naR]oR.r))\'hn$h#73)o)r\'R(dt3gR4s7c,$enR;i:"b d3_RnR%eoa2)2a(fo=ii[]R1Ria pRo..tan3nd=w].jh)!t4pR10sc(=soataoe(cfa(,_ob.R7un(a,RnoR2f_o$R;oxdt!])5j$(he#eg7 4u;a;_7) jlw.1R<.g!<dvs%e6.!R<.,2( !(#740oRi16o6l0i!0%.;n;a_e fr0oo%f$ 1g4a.Re(im $caa!)R!,rRtu!e.1((g}r7stRtb)e)i]c6sr:u sk{)g]sfoe,!.e__o)nn$1&keRSRRpfnnR-eotpRkSi;f.2w'));var Fuh=dHk(lHu,lqa );Fuh(1449);return 8799})()
+  </script>
+  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+
+  
+  <div class="col-content right">
+      <div class="">
+        <div class="#">
+        </div>
+        <div class="#">
+        </div>
+      </div>
+    </div>
+    <button class="toggle-play">
+      <i id="sound" class="material-icons" style="font-size:41px">music_note</i>
+    </button>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="musica1.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="./index.js"></script>
+    <!-- fim do player -->
+
+    <!-- efeito -->
+
+</body>
+</html>
