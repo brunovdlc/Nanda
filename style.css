@@ -11,12 +11,12 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #FA8072;
+  background-color: #0a0a0a;
   color: #ccc8db;
 }
 
 .container {
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
   display: flex;
   max-width: 1600px;
   height: 100vh;
@@ -26,11 +26,11 @@ body {
 
 .left-side {
   width: 260px;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #fa8072;
   display: flex;
   flex-direction: column;
   transition: 0.3s;
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
   overflow: auto;
   flex-shrink: 0;
 }
@@ -71,7 +71,7 @@ body {
   flex-shrink: 0;
   margin-left: auto;
   overflow: auto;
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
   display: flex;
   flex-direction: column;
 }
@@ -108,12 +108,12 @@ body {
   letter-spacing: 4px;
   position: sticky;
   top: 0;
-  background: linear-gradient(to bottom, #FF6A6A 0%, #FF6A6A 76%, rgba(21, 23, 40, 0) 100%);
+  background: linear-gradient(to bottom, #0c0c0c 0%, #0c0c0c 76%, rgba(21, 23, 40, 0) 100%);
 }
 
 .side-title {
   font-family: "DM Sans", sans-serif;
-  color: #5c5e6e;
+  color: #fa8072;
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -135,7 +135,7 @@ body {
 }
 .side-menu a {
   text-decoration: none;
-  color: #000;
+  color: #fa8072;
   display: flex;
   align-items: center;
 }
@@ -153,11 +153,11 @@ body {
   align-items: center;
   margin-top: auto;
   overflow: hidden;
-  color: #000;
+  color: #fa8072;
   padding: 0 20px;
   height: 52px;
   flex-shrink: 0;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #fa8072;
   position: relative;
 }
 .follow-me svg {
@@ -203,7 +203,7 @@ body {
 
 .search-bar {
   height: 60px;
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
   z-index: 3;
   position: relative;
 }
@@ -230,7 +230,7 @@ body {
   padding: 20px;
   flex-grow: 1;
   overflow: auto;
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
 }
 
 .profile {
@@ -270,7 +270,7 @@ body {
   position: absolute;
   bottom: 0;
   padding-left: 200px;
-  background: #FF6A6A;
+  background: #0c0c0c;
   width: 100%;
   display: flex;
   border-radius: 0 0 4px 4px;
@@ -278,7 +278,7 @@ body {
 
 .profile-menu-link {
   padding: 20px 16px;
-  color: #5c5e6e;
+  color: #fa8072;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -302,7 +302,7 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #FF6A6A;
+  border: 3px solid #0c0c0c;
 }
 
 .profile-name {
@@ -343,7 +343,7 @@ body {
 }
 
 .box {
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
   border-radius: 4px;
 }
 
@@ -352,7 +352,7 @@ body {
 }
 .intro-title {
   font-family: "DM Sans", sans-serif;
-  color: #5c5e6e;
+  color: #fa8072;
   font-weight: 600;
   font-size: 18px;
   display: flex;
@@ -444,7 +444,7 @@ body {
 }
 
 .event-subtitle {
-  color: #5c5e6e;
+  color: #fa8072;
   font-family: "DM Sans", sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -522,7 +522,7 @@ body {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #fa8072;
   padding-bottom: 20px;
   flex-wrap: wrap;
 }
@@ -645,7 +645,7 @@ body {
 .album-action {
   margin-right: 20px;
   text-decoration: none;
-  color: #a2a4b4;
+  color: #fa8072;
   display: inline-flex;
   align-items: center;
   font-weight: 600;
@@ -680,7 +680,7 @@ body {
   height: 8px;
   border-radius: 50%;
   content: "";
-  border: 2px solid #FF6A6A;
+  border: 2px solid #0c0c0c;
 }
 
 .account-profile {
@@ -708,13 +708,13 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #FF6A6A;
+  background-color: #0c0c0c;
   z-index: 3;
   flex-shrink: 0;
 }
 
 .stories {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #fa8072;
 }
 
 .stories .user-img {
@@ -754,7 +754,7 @@ body {
   padding-right: 10px;
   display: flex;
   align-items: center;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #fa8072;
   position: sticky;
   bottom: 0;
   margin-top: auto;
@@ -802,7 +802,7 @@ body {
   border: 0;
   width: 52px;
   background-color: #1e2031;
-  border-left: 1px solid #000000;
+  border-left: 1px solid #fa8072;
   color: #fff;
   display: none;
   cursor: pointer;
